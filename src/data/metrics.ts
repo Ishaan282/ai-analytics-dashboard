@@ -27,4 +27,18 @@ export const metricsData = [
     trend: "down" as const,
     icon: "growth" as const,
   },
-]
+  {
+    title: "Avg. Session",
+    value: "4m 32s",
+    change: "+12% from last month",
+    trend: "up" as const,
+    icon: "session" as const,
+  },
+  {
+    title: "Bounce Rate",
+    value: "32%",
+    change: "-5% from last month",
+    trend: "down" as const,
+    icon: "bounce" as const,
+  },
+];

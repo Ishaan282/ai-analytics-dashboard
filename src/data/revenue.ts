@@ -6,4 +6,11 @@ export const revenueData = [
   { month: "May", revenue: 55000, target: 60000 },
   { month: "Jun", revenue: 67000, target: 65000 },
   { month: "Jul", revenue: 72000, target: 70000 },
-]
+  { month: "Aug", revenue: 68000, target: 72000 },
+  { month: "Sep", revenue: 75000, target: 75000 },
+  { month: "Oct", revenue: 82000, target: 80000 },
+  { month: "Nov", revenue: 90000, target: 85000 },
+  { month: "Dec", revenue: 95000, target: 90000 },
+  { month: "Next Jan", revenue: 50000, target: 45000 },
+  { month: "Next Feb", revenue: 58000, target: 50000 },
+];

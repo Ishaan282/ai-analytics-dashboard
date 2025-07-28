@@ -6,5 +6,11 @@ export const userActivityData = [
   { day: "Fri", active: 4800, new: 189 },
   { day: "Sat", active: 3800, new: 239 },
   { day: "Sun", active: 4300, new: 349 },
-]
-
+  { day: "Next Mon", active: 5200, new: 450 },
+  { day: "Next Tue", active: 4300, new: 380 },
+  { day: "Next Wed", active: 7500, new: 420 },
+  { day: "Next Thu", active: 6200, new: 310 },
+  { day: "Next Fri", active: 5800, new: 290 },
+  { day: "Next Sat", active: 4100, new: 260 },
+  { day: "Next Sun", active: 4900, new: 390 },
+];
