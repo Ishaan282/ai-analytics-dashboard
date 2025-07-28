@@ -38,7 +38,6 @@ const CustomDot = ({
   index,
   activeIndex,
   color,
-  dataKey,
   setHoveredIndex,
 }: any) => {
   return (
@@ -89,26 +88,22 @@ export function RevenueLineChart({ data }: LineChartProps) {
                     borderRadius: "var(--radius)",
                   }}
                 />
-                <Line
-                  type="monotone"
-                  dataKey="revenue"
-                  stroke="var(--color-chart-1)"
-                  strokeWidth={2}
-                  name="Revenue"
-                  dot={(props) => {
-                    const { key, ...rest } = props
-                    return (
+                  <Line
+                    type="monotone"
+                    dataKey="revenue"
+                    stroke="var(--color-chart-1)"
+                    strokeWidth={2}
+                    name="Revenue"
+                    dot={(props) => (
                       <CustomDot
-                        key={key}
-                        {...rest}
+                        {...props}
                         activeIndex={hoveredIndex}
                         color="var(--color-chart-1)"
                         setHoveredIndex={setHoveredIndex}
                       />
-                    )
-                  }}
+                    )}
+                  />
 
-                />
                 <Line
                   type="monotone"
                   dataKey="target"
@@ -125,6 +120,7 @@ export function RevenueLineChart({ data }: LineChartProps) {
                     />
                   )}
                 />
+
               </LineChart>
             </ChartContainer>
           </div>

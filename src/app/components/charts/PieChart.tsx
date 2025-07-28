@@ -2,7 +2,6 @@
     "use client"
 
     import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-    import { ChartContainer } from "@/components/ui/chart"
     import { Pie, PieChart, Cell, ResponsiveContainer, Tooltip } from "recharts"
     import { PieChartProps } from "./types"
 

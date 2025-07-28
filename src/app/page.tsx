@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // src/app/page.tsx
 "use client"
 
@@ -73,17 +74,17 @@ return (
         // Implement export functionality
     }
 
-    const handleQuickFilterChange = (filter: string) => {
-        setActiveFilter(filter)
-    }
+    // const handleQuickFilterChange = (filter: string) => {
+    //     setActiveFilter(filter)
+    // }
 
     const filterData = (dateRange: string, status: string, quickFilter: string) => {
         // First filter by date range (quick filter takes precedence)
         let dateFilteredData = [...tableData]
-        let dateFilteredMetrics = [...metricsData]
-        let dateFilteredRevenue = [...revenueData]
-        let dateFilteredActivity = [...userActivityData]
-        let dateFilteredConversion = [...conversionData]
+        // const dateFilteredMetrics = [...metricsData]
+        // const dateFilteredRevenue = [...revenueData]
+        // const dateFilteredActivity = [...userActivityData]
+        // const dateFilteredConversion = [...conversionData]
 
         // Apply quick filter first
         if (quickFilter !== "all") {
